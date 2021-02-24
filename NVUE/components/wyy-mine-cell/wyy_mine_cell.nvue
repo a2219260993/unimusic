@@ -1,0 +1,52 @@
+<template>
+	<div class="cells">
+		<div class="cell">
+			<div class="cell-left">
+				<wyy-icon :type="icon" size="50" color="#000000" ></wyy-icon>
+			</div>
+			<div class="cell-right">
+				<text class="cell-name">{{title}}</text>
+				<text class="number"> {{tip ? '(' + tip + ')' : ''}}</text>
+			</div>
+		</div>
+		
+	</div>
+</template>
+
+<script>
+	
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		components: {
+			
+		},
+		props: {
+			icon: {
+				type: String,
+				default: ''
+			},
+			title: {
+				type: String,
+				default: '',
+			},
+			tip: {
+				type: String,
+				default: '',
+			},
+			right_icon: {
+				type: String,
+				default: '',
+			},
+
+		},
+	}
+</script>
+
+
+<style>
+@import '../../components/wyy-mine-cell/wyy_mine_cell.css';
+</style>
